@@ -15,9 +15,9 @@
         <a class='Homepage' href="/">Homepage</a>
         <nav>
             <ul class= 'nav__links'>
-                <li><a href = '/'> Homepage </a></li>
-                <li><a href = 'about/'> About </a></li>
-                <li><a href = 'contact/'> Contact us </a></li>
+                <li><a href="{% url 'homepage' %}">Homepage</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><<a href="{% url 'contact' %}">Contact</a></li>
             </ul>
         </nav>
         <a class='login' href="#"><button>Login</buton></a>
