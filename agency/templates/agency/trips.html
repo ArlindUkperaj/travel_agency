@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <h1> Upcoming trips </h1>
+        <ul>
+    {% for trip in trip_list %}
+
+        <li> {{ trip }} </li>
+    
+    {% endfor %}
+
+        </ul>
+
+
+{% endblock %}
