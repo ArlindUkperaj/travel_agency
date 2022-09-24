@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <center>
+    <h1>Add Trip</h1>
+    {% if submitted %}
+
+        <h1>Your Trip was submitted</h1>
+
+    {% else %}
+       
+        <form action="" method="POST">
+            {% csrf_token %}
+
+            {{form.as_p}}
+
+            <input type="submit" value="Submit">
+        </form>
+
+    {% endif %}
+        
+
+    </center>
+{% endblock content %}
